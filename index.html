@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/open-indumentaria/">
+<!-- BASE:END -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  
+  <meta name="theme-color" content="#E11D2A" />
+  
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  
+
+<!-- SEO Meta Tags -->
+<title>Open Indumentaria | Uniformes y ropa de trabajo con el logo de tu empresa</title>
+<meta name="description" content="OPEN Indumentaria, Grupo Ballerini SRL. Indumentaria laboral y corporativa personalizada en Salta. Consultá por WhatsApp uniformes para empresas, comercios y equipos de trabajo." />
+<meta property="og:title" content="Open Indumentaria | Uniformes y ropa de trabajo con el logo de tu empresa" />
+<meta property="og:description" content="OPEN Indumentaria, Grupo Ballerini SRL. Indumentaria laboral y corporativa personalizada en Salta. Consultá por WhatsApp uniformes para empresas, comercios y equipos de trabajo." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Open Indumentaria | Uniformes y ropa de trabajo con el logo de tu empresa" />
+<meta name="twitter:description" content="OPEN Indumentaria, Grupo Ballerini SRL. Indumentaria laboral y corporativa personalizada en Salta. Consultá por WhatsApp uniformes para empresas, comercios y equipos de trabajo." />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mwjf96u9-yjazh";
+  var SITEK="";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  function siteTok(){try{return SITEK?localStorage.getItem(SITEK):null;}catch(e){return null;}}
+  var u=new URL(location.href);var found=null;var changed=false;
+  var PINP=true;
+  if(!PINP){try{localStorage.removeItem('lp_pin_'+slug);if(SITEK)localStorage.removeItem(SITEK);}catch(e){}}
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{if(PINP||p!=='pin_access_token'){localStorage.setItem(map[p]+slug,v);if(SITEK&&p==='pin_access_token')localStorage.setItem(SITEK,v);}}catch(e){}if(p==='pin_access_token'){try{sessionStorage.setItem('lp_fresh_'+slug,'1');}catch(e){}}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://app.orkestic.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=9369');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='KDageAK2a';
+  var apiBase='https://app.orkestic.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    var phone=findPhone();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;background:color-mix(in srgb,'+successBtnColor+' 12%,white);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="'+successBtnColor+'" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-cart>
+(function(){
+  var slug='KDageAK2a';
+  var apiBase='https://app.orkestic.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;background:color-mix(in srgb,'+successBtnColor+' 12%,white);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="'+successBtnColor+'" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header data-section="navbar" class="topbar">
+    <div class="shell">
+      <div class="topbar-inner">
+        <a href="#inicio" class="brand" aria-label="Open Indumentaria inicio">
+          <img src="https://www.openindumentaria.com.ar/__l5e/assets-v1/4f5b356b-de32-4f29-a19f-3a904060962f/open-logo.png" alt="Open Indumentaria" style="width:110px;height:55px;object-fit:contain">
+          <div class="brand-text">
+            <strong>OPEN Indumentaria</strong>
+            <span>Grupo Ballerini SRL · Salta, Argentina</span>
+          </div>
+        </a>
+
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="#catalogo">Catálogo</a>
+          <a href="#rubros">Rubros</a>
+          <a href="#personalizacion">Personalización</a>
+          <a href="#como-comprar">Cómo comprar</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+
+        <button class="menu-btn btn btn-secondary" id="menuBtn" aria-expanded="false" aria-controls="mobilePanel">
+          Menú
+        </button>
+      </div>
+
+      <div class="mobile-panel" id="mobilePanel" hidden>
+        <div class="panel" aria-label="Menú móvil">
+          <a href="#catalogo">Catálogo</a>
+          <a href="#rubros">Rubros</a>
+          <a href="#personalizacion">Personalización</a>
+          <a href="#como-comprar">Cómo comprar</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section data-section="hero" class="hero" id="inicio">
+      <div class="shell">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow" data-aos="fade-up">
+              <span class="dot" aria-hidden="true"></span>
+              Empresas y comercios · uniformes y ropa de trabajo
+            </div>
+            <h1>Uniformes y ropa de trabajo con el logo de tu empresa</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Vestí a tu equipo con prendas que acompañen su actividad y representen tu marca. Te asesoramos para elegir modelos y personalización desde Salta, Argentina.</p>
+            <p class="hero-note" data-aos="fade-up" data-aos-delay="150" style="margin-top:14px;font-weight:700;color:var(--accent-dark);">Tu equipo, tu marca, tu uniforme.</p>
+
+            <div class="hero-actions" data-aos="fade-up" data-aos-delay="200">
+              <a class="btn btn-primary" href="https://wa.me/5493875916465?text=Hola,%20quiero%20un%20presupuesto%20para%20uniformes%20con%20el%20logo%20de%20mi%20empresa." target="_blank" rel="noopener noreferrer">
+                Solicitar presupuesto por WhatsApp
+              </a>
+              <a class="btn btn-secondary" href="#catalogo">Ver catálogo</a>
+            </div>
+
+            <div class="hero-note" data-aos="fade-up" data-aos-delay="250">
+              <span>Asesoramiento por WhatsApp</span>
+              <span>Personalización según prenda</span>
+              <span>Atención para empresas y comercios</span>
+            </div>
+          </div>
+
+          <div class="hero-visual" data-aos="fade-left" data-aos-delay="100" aria-label="Parka roja con cintas reflectivas">
+            <div class="photo" role="img" aria-label="Operario con parka roja con cintas reflectivas y casco blanco"></div>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section data-section="catalogo" id="catalogo">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <h2>Catálogo interactivo</h2>
+            <p>Elegí las prendas para tu equipo y consultanos por modelos, cantidades y personalización con tu logo.</p>
+          </div>
+        </div>
+
+        <div class="catalog-tools" role="toolbar" aria-label="Filtros de catálogo">
+          <button class="chip" type="button" aria-pressed="true" data-filter="todos">Todos</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="remeras">Remeras</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="chombas">Chombas</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="camisas">Camisas</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="pantalones">Pantalones</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="chalecos">Chalecos</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="camperas">Camperas</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="parka">Parka</button>
+          
+          
+        </div>
+
+        <div class="grid catalog-grid" id="catalogGrid" aria-live="polite"></div>
+        <div class="about-card" style="margin-top:16px;" data-aos="fade-up">
+          <strong>¿Ya viste opciones?</strong>
+          <div class="modal-cta" style="margin-top:12px;">
+            <a class="btn btn-primary" href="https://wa.me/5493875916465?text=Hola,%20quiero%20seguir%20con%20mi%20consulta%20por%20uniformes." target="_blank" rel="noopener noreferrer">Solicitar presupuesto por WhatsApp</a>
+            <a class="btn btn-secondary" href="#personalizacion">Ver personalización</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section data-section="personalizacion" id="personalizacion">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <h2>Personalización</h2>
+            <p>Definimos la técnica y la ubicación según la prenda, el diseño y la cantidad. Te orientamos para elegir la mejor opción para tu equipo.</p>
+          </div>
+        </div>
+
+        <div class="split">
+          <article class="about-card" data-aos="fade-right">
+            <h3>Técnicas disponibles según prenda</h3>
+            <p style="margin-top:10px;">Bordado, estampado y sublimación según el tipo de prenda, el diseño y el uso esperado.</p>
+            <div class="about-list">
+              <div class="about-pill">
+                <div class="ico" aria-hidden="true">B</div>
+                <div><b>Bordado</b><span>Ideal para una terminación prolija en prendas compatibles.</span></div>
+              </div>
+              <div class="about-pill">
+                <div class="ico" aria-hidden="true">E</div>
+                <div><b>Estampado</b><span>Para logos, textos y piezas gráficas según la prenda y el diseño.</span></div>
+              </div>
+              <div class="about-pill">
+                <div class="ico" aria-hidden="true">S</div>
+                <div><b>Sublimación</b><span>Disponible según prenda y necesidad de personalización.</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="about-card" data-aos="fade-left">
+            <h3>Ubicaciones habituales</h3>
+            <p style="margin-top:10px;">Definimos el mejor lugar de aplicación de acuerdo con la prenda y la imagen que quieras proyectar.</p>
+            <div class="about-list">
+              <div class="about-pill">
+                <div class="ico" aria-hidden="true">F</div>
+                <div><b>Frente</b><span>Logo o identificación institucional.</span></div>
+              </div>
+              <div class="about-pill">
+                <div class="ico" aria-hidden="true">E</div>
+                <div><b>Espalda</b><span>Nombre de empresa o sector.</span></div>
+              </div>
+              <div class="about-pill">
+                <div class="ico" aria-hidden="true">M</div>
+                <div><b>Manga</b><span>Detalle secundario o marca complementaria.</span></div>
+              </div>
+              <div class="about-pill">
+                <div class="ico" aria-hidden="true">N</div>
+                <div><b>Nombre o sector</b><span>Identificación interna o atención al cliente.</span></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-head" style="margin-top:26px;">
+          <div>
+            <h2>Ideas de personalización</h2>
+            <p>Imágenes ilustrativas de aplicación de marca.</p>
+          </div>
+        </div>
+
+        <div class="grid catalog-grid">
+          <article class="product-card" data-aos="fade-up">
+            <div class="product-media" style="--image:url('https://catalogo-open-indumentaria.lovable.app/__l5e/assets-v1/850a47f5-03e6-4378-8cb4-8b11ffbad347/open-gallery-coca-cola.png')">
+              <div class="product-badge">Aplicación de marca</div>
+            </div>
+            <div class="product-body"><h3>Idea de personalización 1</h3><p>Imágenes ilustrativas de aplicación de marca sobre indumentaria.</p></div>
+          </article>
+          <article class="product-card" data-aos="fade-up" data-aos-delay="60">
+            <div class="product-media" style="--image:url('https://catalogo-open-indumentaria.lovable.app/__l5e/assets-v1/b029fc7d-a536-4a3c-88f4-16d60055b7ea/open-gallery-claro.png')">
+              <div class="product-badge">Aplicación de marca</div>
+            </div>
+            <div class="product-body"><h3>Idea de personalización 2</h3><p>Imágenes ilustrativas de aplicación de marca sobre indumentaria.</p></div>
+          </article>
+          <article class="product-card" data-aos="fade-up" data-aos-delay="120">
+            <div class="product-media" style="--image:url('https://catalogo-open-indumentaria.lovable.app/__l5e/assets-v1/e76f2a73-ea36-4806-b3f9-501216019c9b/open-gallery-super-elias.jpg')">
+              <div class="product-badge">Aplicación de marca</div>
+            </div>
+            <div class="product-body"><h3>Idea de personalización 3</h3><p>Imágenes ilustrativas de aplicación de marca sobre indumentaria.</p></div>
+          </article>
+          <article class="product-card" data-aos="fade-up" data-aos-delay="180">
+            <div class="product-media" style="--image:url('https://catalogo-open-indumentaria.lovable.app/__l5e/assets-v1/e2f08f1a-a4ce-4435-a0cd-cf51291fb82b/open-gallery-logistica.jpeg')">
+              <div class="product-badge">Aplicación de marca</div>
+            </div>
+            <div class="product-body"><h3>Idea de personalización 4</h3><p>Imágenes ilustrativas de aplicación de marca sobre indumentaria.</p></div>
+          </article>
+          <article class="product-card" data-aos="fade-up" data-aos-delay="240">
+            <div class="product-media" style="--image:url('https://catalogo-open-indumentaria.lovable.app/__l5e/assets-v1/ab81054b-099f-42b5-898a-b27d321cb55d/open-gallery-casalta.png')">
+              <div class="product-badge">Aplicación de marca</div>
+            </div>
+            <div class="product-body"><h3>Idea de personalización 5</h3><p>Imágenes ilustrativas de aplicación de marca sobre indumentaria.</p></div>
+          </article>
+          <article class="product-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="product-media" style="--image:url('https://catalogo-open-indumentaria.lovable.app/__l5e/assets-v1/c56b7f0e-9b92-48d2-857b-847ea721f62e/open-gallery-mineria.png')">
+              <div class="product-badge">Aplicación de marca</div>
+            </div>
+            <div class="product-body"><h3>Idea de personalización 6</h3><p>Imágenes ilustrativas de aplicación de marca sobre indumentaria.</p></div>
+          </article>
+        </div>
+        <div class="about-card" style="margin-top:16px;" data-aos="fade-up">
+          <strong>¿Querés avanzar con tu pedido?</strong>
+          <div class="modal-cta" style="margin-top:12px;">
+            <a class="btn btn-primary" href="#contacto">Continuar en contacto</a>
+            <a class="btn btn-secondary" href="https://wa.me/5493875916465?text=Hola,%20quiero%20consultar%20por%20uniformes%20y%20personalización." target="_blank" rel="noopener noreferrer">WhatsApp directo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section data-section="nosotros" id="nosotros">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <h2>Nosotros · 17 años de trayectoria</h2>
+            <p>Open Indumentaria, de Grupo Ballerini SRL, cuenta con 17 años de trayectoria trabajando para empresas y comercios de Salta, Argentina. Acompañamos a cada equipo con indumentaria laboral y corporativa personalizada que representa la identidad de su marca.</p>
+          </div>
+        </div>
+
+        <div class="split">
+          <article class="about-card" data-aos="fade-right">
+            <h3>17 años vistiendo equipos en Salta, Argentina</h3>
+            <p style="margin-top:10px;">Trabajamos una atención cercana, clara y práctica para ayudar a definir uniformes que representen a cada equipo.</p>
+            <div class="about-list">
+              <div class="about-pill">
+                <div class="ico" aria-hidden="true">C</div>
+                <div><b>Calidad</b><span>Priorizamos una selección de prendas coherente con el uso y la imagen.</span></div>
+              </div>
+              <div class="about-pill">
+                <div class="ico" aria-hidden="true">C</div>
+                <div><b>Cercanía</b><span>Atención directa para resolver consultas y orientar la compra.</span></div>
+              </div>
+              <div class="about-pill">
+                <div class="ico" aria-hidden="true">C</div>
+                <div><b>Compromiso</b><span>Seguimiento de cada cotización con foco en la necesidad real del cliente.</span></div>
+              </div>
+              <div class="about-pill">
+                <div class="ico" aria-hidden="true">I</div>
+                <div><b>Identidad empresarial</b><span>Prendas pensadas para reforzar presencia de marca en el trabajo diario.</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="about-card" data-aos="fade-left"><h3>Atención directa desde Salta, Argentina</h3><p style="margin-top:10px">Open Indumentaria · Grupo Ballerini SRL. Te acompañamos a elegir las prendas y la personalización para tu equipo.</p><div class="about-list"><div class="about-pill"><div><b>Conocé las prendas</b><span>Coordiná una visita al showroom en Arenales 288, Salta, Argentina.</span></div></div><div class="about-pill"><div><b>Una propuesta para tu empresa</b><span>En tu presupuesto detallamos prendas, personalización, forma de pago y plazo de entrega.</span></div></div></div><a class="btn btn-primary" style="margin-top:16px" href="https://wa.me/5493875916465?text=Hola%2C%20quiero%20asesoramiento%20para%20vestir%20a%20mi%20equipo." target="_blank" rel="noopener noreferrer">Hablar con Open</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section data-section="rubros" id="rubros">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <h2>Soluciones por rubro</h2>
+            <p>Elegimos prendas y combinaciones según actividad, imagen institucional y uso diario. Cada consulta se arma con asesoramiento personalizado.</p>
+          </div>
+        </div>
+
+        <div class="grid rubro-grid">
+          <article class="rubro-card" data-aos="fade-up">
+            <h3>Industria</h3>
+            <p>Podés armar un conjunto con remera, chomba o cargo según la tarea y la imagen de tu equipo.</p>
+            <ul>
+              <li>Remeras corporativas</li>
+              <li>Chombas corporativas</li>
+              <li>Pantalón cargo</li>
+            </ul>
+            <a class="mini-link" href="https://wa.me/5493875916465?text=Hola,%20quiero%20consultar%20uniformes%20para%20industria%20con%20remera,%20chomba%20o%20pantalón%20cargo." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp →</a>
+          </article>
+          <article class="rubro-card" data-aos="fade-up" data-aos-delay="100">
+            <h3>Construcción</h3>
+            <p>Prendas de uso cotidiano para cuadrillas y supervisión.</p>
+            <ul>
+              <li>Remeras corporativas</li>
+              <li>Chombas corporativas</li>
+              <li>Pantalón cargo</li>
+            </ul>
+            <a class="mini-link" href="https://wa.me/5493875916465?text=Hola,%20quiero%20consultar%20uniformes%20para%20construcción%20con%20remera,%20chomba%20y%20pantalón%20cargo." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp →</a>
+          </article>
+          <article class="rubro-card" data-aos="fade-up" data-aos-delay="200">
+            <h3>Hoteles</h3>
+            <p>Imagen prolija para atención al público y equipos internos.</p>
+            <ul>
+              <li>Camisa Oxford</li>
+              <li>Chombas corporativas</li>
+              <li>Remeras corporativas</li>
+            </ul>
+            <a class="mini-link" href="https://wa.me/5493875916465?text=Hola,%20quiero%20consultar%20uniformes%20para%20hotel%20con%20camisa%20Oxford,%20chomba%20o%20remera." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp →</a>
+          </article>
+          <article class="rubro-card" data-aos="fade-up" data-aos-delay="300">
+            <h3>Gastronomía</h3>
+            <p>Uniformes cómodos para cocina, salón y atención al cliente.</p>
+            <ul>
+              <li>Chombas corporativas</li>
+              <li>Remeras corporativas</li>
+              <li>Camisa Oxford</li>
+            </ul>
+            <a class="mini-link" href="https://wa.me/5493875916465?text=Hola,%20quiero%20consultar%20uniformes%20para%20gastronomía%20con%20chomba,%20remera%20o%20camisa%20Oxford." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp →</a>
+          </article>
+          <article class="rubro-card" data-aos="fade-up">
+            <h3>Supermercados y comercios</h3>
+            <p>Opciones para atención, reposición y equipos de sala.</p>
+            <ul>
+              <li>Remeras corporativas</li>
+              <li>Chombas corporativas</li>
+              <li>Camisa Oxford</li>
+            </ul>
+            <a class="mini-link" href="https://wa.me/5493875916465?text=Hola,%20quiero%20consultar%20uniformes%20para%20supermercado%20o%20comercio%20con%20remera,%20chomba%20o%20camisa%20Oxford." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp →</a>
+          </article>
+          <article class="rubro-card" data-aos="fade-up" data-aos-delay="100">
+            <h3>Frigoríficos</h3>
+            <p>Prendas para uso diario del personal operativo y administrativo.</p>
+            <ul>
+              <li>Remeras corporativas</li>
+              <li>Chombas corporativas</li>
+              <li>Pantalón cargo</li>
+            </ul>
+            <a class="mini-link" href="https://wa.me/5493875916465?text=Hola,%20quiero%20consultar%20uniformes%20para%20frigorífico%20con%20remera,%20chomba%20o%20pantalón%20cargo." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp →</a>
+          </article>
+          <article class="rubro-card" data-aos="fade-up" data-aos-delay="200">
+            <h3>Transporte y logística</h3>
+            <p>Prendas cómodas para traslado, carga y depósito.</p>
+            <ul>
+              <li>Remeras corporativas</li>
+              <li>Chombas corporativas</li>
+              <li>Rompevientos</li>
+            </ul>
+            <a class="mini-link" href="https://wa.me/5493875916465?text=Hola,%20quiero%20consultar%20uniformes%20para%20transporte%20y%20logística%20con%20remera,%20chomba%20o%20rompevientos." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp →</a>
+          </article>
+          <article class="rubro-card" data-aos="fade-up" data-aos-delay="300">
+            <h3>Campo y agro</h3>
+            <p>Prendas pensadas para recorridos y tareas de temporada.</p>
+            <ul>
+              <li>Campera polar</li>
+              <li>Chombas corporativas</li>
+              <li>Remeras corporativas</li>
+            </ul>
+            <a class="mini-link" href="https://wa.me/5493875916465?text=Hola,%20quiero%20consultar%20uniformes%20para%20campo%20y%20agro%20con%20campera%20polar,%20chomba%20o%20remera." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp →</a>
+          </article>
+          <article class="rubro-card" data-aos="fade-up">
+            <h3>Servicios y oficinas</h3>
+            <p>Imagen ordenada para atención al cliente y trabajo interno.</p>
+            <ul>
+              <li>Camisa Oxford</li>
+              <li>Chombas corporativas</li>
+              <li>Remeras corporativas</li>
+            </ul>
+            <a class="mini-link" href="https://wa.me/5493875916465?text=Hola,%20quiero%20consultar%20uniformes%20para%20servicios%20u%20oficinas%20con%20camisa%20Oxford,%20chomba%20o%20remera." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp →</a>
+          </article>
+          <article class="rubro-card" data-aos="fade-up" data-aos-delay="100">
+            <h3>Minería</h3>
+            <p>Combinación sugerida con parka roja con cintas reflectivas, pantalón cargo y remera para tareas al aire libre.</p>
+            <ul>
+              <li>Parka</li>
+              <li>Pantalón cargo</li>
+              <li>Remera corporativa</li>
+            </ul>
+            <a class="mini-link" href="https://wa.me/5493875916465?text=Hola,%20quiero%20consultar%20uniformes%20para%20minería%20con%20parka,%20pantalón%20cargo%20y%20remera." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp →</a>
+          </article>
+        </div>
+
+        <div class="grid benefits" style="margin-top:16px;">
+          <div class="benefit" data-aos="fade-up">
+            <strong>Identidad de marca</strong>
+            <p>Uniformes coherentes para reforzar presencia y profesionalismo.</p>
+          </div>
+          <div class="benefit" data-aos="fade-up" data-aos-delay="100">
+            <strong>Comodidad de uso</strong>
+            <p>Prendas acordes a la actividad, al entorno y a la rutina del equipo.</p>
+          </div>
+          <div class="benefit" data-aos="fade-up" data-aos-delay="200">
+            <strong>Prendas según actividad</strong>
+            <p>Recomendación de modelos, telas y terminaciones según cada rubro.</p>
+          </div>
+          <div class="benefit" data-aos="fade-up" data-aos-delay="300">
+            <strong>Atención personalizada</strong>
+            <p>Asesoramiento directo para definir la mejor solución de compra.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section data-section="como-comprar" id="como-comprar">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <h2>Cómo comprar</h2>
+            <p>Un proceso simple para pedidos corporativos y consultas de uniformes personalizados.</p>
+          </div>
+        </div>
+
+        <div class="grid process">
+          <article class="step-card" data-aos="fade-up">
+            <div class="step-index">1</div>
+            <h3>Contanos prendas y cantidad</h3>
+            <p>Nos compartís qué necesitás y cuántas unidades querés cotizar.</p>
+          </article>
+          <article class="step-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="step-index">2</div>
+            <h3>Recibí asesoramiento y presupuesto</h3>
+            <p>Te orientamos sobre modelos, talles, colores y personalización posible.</p>
+          </article>
+          <article class="step-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="step-index">3</div>
+            <h3>Confirmá pedido y coordiná entrega</h3>
+            <p>Definimos el pedido, la forma de pago y la coordinación de retiro o envío.</p>
+          </article>
+        </div>
+
+        <div class="about-card" style="margin-top:16px;" data-aos="fade-up">
+          <strong>Condiciones:</strong> <span style="color:var(--muted)">en tu presupuesto detallamos prendas, personalización, forma de pago y plazo de entrega.</span>
+        </div>
+      </div>
+    </section>
+
+    <section data-section="faq" id="faq">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <h2>Preguntas frecuentes</h2>
+            <p>Preguntas frecuentes sobre personalización, cantidades y coordinación de tu pedido.</p>
+          </div>
+        </div>
+
+        <div class="faq-grid">
+          <details class="faq-item" data-aos="fade-up">
+            <summary><h3>¿Puedo personalizar el logo?</h3></summary>
+            <p>Sí. Te asesoramos para definir bordado, estampado o sublimación según la prenda y el diseño.</p>
+          </details>
+          <details class="faq-item" data-aos="fade-up" data-aos-delay="80">
+            <summary><h3>¿Se pueden elegir talles y colores?</h3></summary>
+            <p>Sí, y se confirman al cotizar según la prenda que elijas y la disponibilidad del momento.</p>
+          </details>
+          <details class="faq-item" data-aos="fade-up" data-aos-delay="160">
+            <summary><h3>¿Hay cantidad mínima?</h3></summary>
+            <p>La cantidad mínima depende de la prenda y la técnica. Se informa en el presupuesto según tu pedido.</p>
+          </details>
+          <details class="faq-item" data-aos="fade-up" data-aos-delay="240">
+            <summary><h3>¿Cómo se define el presupuesto?</h3></summary>
+            <p>Se calcula según cantidad, prenda, técnica de personalización y detalles del logo o texto.</p>
+          </details>
+          <details class="faq-item" data-aos="fade-up">
+            <summary><h3>¿Puedo retirar o pedir envío?</h3></summary>
+            <p>Sí, según la coordinación que acordemos cuando confirmes el pedido.</p>
+          </details>
+          <details class="faq-item" data-aos="fade-up" data-aos-delay="80">
+            <summary><h3>¿Cuál es el plazo de entrega?</h3></summary>
+            <p>El plazo se confirma en el presupuesto, de acuerdo con las prendas, la personalización y la coordinación del pedido.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section data-section="contacto" id="contacto">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <h2>Showroom y contacto</h2>
+            <p>Consultá antes de tu visita para coordinar mejor la atención y el asesoramiento.</p>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <article class="contact-card" data-aos="fade-up">
+            <h3>Datos de contacto</h3>
+            <p class="helper">Showroom: Arenales 288, Salta, Argentina. Coordiná por WhatsApp antes de tu visita.</p>
+            <div class="contact-list">
+              <div class="contact-item">
+                <div class="ico" aria-hidden="true">📍</div>
+                <div>
+                  <strong>Showroom</strong>
+                  <p>Arenales 288, Salta, Argentina</p>
+                  <p><a href="https://www.google.com/maps/search/?api=1&query=Arenales%20288%2C%20Salta%20Capital" target="_blank" rel="noopener noreferrer">Cómo llegar</a></p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="ico" aria-hidden="true">💬</div>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <p><a href="https://wa.me/5493875916465" target="_blank" rel="noopener noreferrer">+54 9 387 591-6465</a></p>
+                  <p>Consultas y presupuestos personalizados.</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="ico" aria-hidden="true">📞</div>
+                <div>
+                  <strong>Teléfono</strong>
+                  <p><a href="tel:+5493875916465">+54 9 387 591-6465</a></p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="ico" aria-hidden="true">✉️</div>
+                <div>
+                  <strong>Email</strong>
+                  <p><a href="mailto:ventas@openindumentaria.com.ar">ventas@openindumentaria.com.ar</a></p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="ico" aria-hidden="true">IG</div>
+                <div>
+                  <strong>Instagram</strong>
+                  <p><a href="https://www.instagram.com/openindumentaria/" target="_blank" rel="noopener noreferrer">/openindumentaria</a></p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="ico" aria-hidden="true">FB</div>
+                <div>
+                  <strong>Facebook</strong>
+                  <p><a href="https://www.facebook.com/profile.php?id=100031806561794" target="_blank" rel="noopener noreferrer">Perfil de Facebook</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="hours" aria-label="Horarios de atención">
+              <strong>Horarios</strong><br>
+              Lunes a viernes 9 a 13 y 16 a 20 · Sábados 10 a 13
+              <div class="helper" style="margin-top:6px;">Consultá por WhatsApp antes de tu visita.</div>
+            </div>
+          </article>
+
+          <article class="contact-card" data-aos="fade-up" data-aos-delay="100">
+            <h3>Preparar consulta por WhatsApp</h3>
+            <p class="helper">Completá el formulario y se abrirá WhatsApp con el resumen listo. La consulta se envía al confirmar allí.</p>
+
+            <form class="form" id="quoteForm" novalidate>
+              <div class="form-row">
+                <div>
+                  <label class="sr-only" for="nombre">Nombre</label>
+                  <input class="field" id="nombre" name="nombre" type="text" placeholder="Nombre *" autocomplete="name" required />
+                </div>
+                <div>
+                  <label class="sr-only" for="prenda">Prenda</label>
+                  <input class="field" id="prenda" name="prenda" type="text" placeholder="Prenda *" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div>
+                  <label class="sr-only" for="empresa">Empresa</label>
+                  <input class="field" id="empresa" name="empresa" type="text" placeholder="Empresa (opcional)" autocomplete="organization" />
+                </div>
+                <div>
+                  <label class="sr-only" for="cantidad">Cantidad aproximada</label>
+                  <input class="field" id="cantidad" name="cantidad" type="text" placeholder="Cantidad aproximada (opcional)" inputmode="text" />
+                </div>
+              </div>
+
+              <div>
+                <label class="sr-only" for="mensaje">Detalles adicionales</label>
+                <textarea class="field" id="mensaje" name="mensaje" placeholder="Detalles adicionales (opcional)"></textarea>
+              </div>
+
+              <div class="helper">
+                Sugerencia: indicá colores deseados, uso de la prenda y si necesitás bordado, estampado o sublimación.
+              </div>
+
+              <div class="modal-cta" style="margin-top:0;">
+                <button class="btn btn-primary" type="submit">Continuar en WhatsApp</button>
+                <a class="btn btn-secondary" href="https://wa.me/5493875916465" target="_blank" rel="noopener noreferrer">WhatsApp directo</a>
+              </div>
+              <div class="form-status" id="formStatus" aria-live="polite"></div>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-section="footer" class="footer">
+    <div class="shell">
+      <div class="footer-inner">
+        <div>
+          <img src="https://www.openindumentaria.com.ar/__l5e/assets-v1/4f5b356b-de32-4f29-a19f-3a904060962f/open-logo.png" alt="Open Indumentaria" style="width:150px;height:70px;object-fit:contain"><br>
+          <small>Grupo Ballerini SRL · Salta, Argentina</small>
+        </div>
+        <div class="footer-links" aria-label="Enlaces de anclaje">
+          <a href="#inicio">Inicio</a>
+          <a href="#catalogo">Catálogo</a>
+          <a href="#rubros">Rubros</a>
+          <a href="#personalizacion">Personalización</a>
+          <a href="#como-comprar">Cómo comprar</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#contacto">Contacto</a>
+          <a href="#faq">Preguntas frecuentes</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a class="floating-wa" href="https://wa.me/5493875916465?text=Hola%2C%20quiero%20una%20consulta%20sobre%20uniformes%20personalizados.%20%C2%BFMe%20pueden%20asesorar%3F" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp para consultar">
+    <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M19.11 17.39c-.27-.14-1.62-.8-1.87-.9-.25-.09-.43-.14-.61.14-.18.27-.7.9-.86 1.08-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.41.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.48-.84-2.02-.22-.53-.45-.46-.61-.46h-.52c-.18 0-.48.07-.73.34-.25.27-.98.96-.98 2.34s1 2.72 1.14 2.9c.14.18 1.98 3.03 4.79 4.25.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.62-.66 1.85-1.29.23-.63.23-1.17.16-1.29-.07-.12-.25-.18-.52-.32ZM16.03 3c-7.17 0-13 5.83-13 13 0 2.3.6 4.55 1.74 6.53L3 29l6.67-1.75A12.96 12.96 0 0 0 16.03 29c7.17 0 13-5.83 13-13s-5.83-13-13-13Zm0 23.8c-2.17 0-4.29-.58-6.14-1.68l-.44-.26-3.96 1.04 1.06-3.86-.29-.47a10.82 10.82 0 1 1 9.77 5.23Z"/>
+    </svg>
+  </a>
+
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+      <div class="modal-header">
+        <div>
+          <h3 id="modalTitle">Producto</h3>
+          <p id="modalDesc">Consultá opciones para tu equipo.</p>
+        </div>
+        <button class="close-btn" id="closeModalBtn" type="button" aria-label="Cerrar modal">✕</button>
+      </div>
+      <div class="modal-body"><img id="modalPhoto" alt="" style="width:100%;max-height:420px;object-fit:contain;background:#f5f5f5;border-radius:16px;margin-bottom:20px">
+        <div class="detail-grid">
+          <div class="detail-box">
+            <h4>Descripción</h4>
+            <p id="modalText" style="margin:0; color:var(--muted)"></p>
+          </div>
+          <div class="detail-box">
+            <h4>Uso sugerido</h4>
+            <ul id="modalBullets"></ul>
+          </div>
+        </div>
+        <div class="modal-cta">
+          <a class="btn btn-primary" id="modalWaLink" href="#" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+          <button class="btn btn-secondary" type="button" id="modalCopyBtn">Copiar mensaje</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    const products = [
+      {"name":"Remeras corporativas","category":"remeras","image":"https://catalogo-open-indumentaria.lovable.app/__l5e/assets-v1/6cb528a3-1ac7-4a19-95b3-a176ec21b3b5/remera-blanca-hombre.png","badge":"Open Indumentaria","description":"Prenda base para identificar a tu equipo en el trabajo diario y en la atención al público.","bullets":["Uso cotidiano para equipos y atención","Ideal para logos, nombres o sectores","Colores, talles, composición, disponibilidad y plazo se confirman al cotizar"],"whatsapp":"Hola, quiero cotizar remeras corporativas para mi empresa."},
+      {"name":"Chombas corporativas","category":"chombas","image":"https://catalogo-open-indumentaria.lovable.app/__l5e/assets-v1/6b0274d3-0f56-4159-a0b5-3e6778234731/chomba-azul-oficina.png","badge":"Open Indumentaria","description":"Prenda versátil para atención al público, oficinas y uso institucional cotidiano.","bullets":["Buena opción para mostrador, recepción y visitas","Sirve para bordado o estampado según diseño","Colores, talles, composición, disponibilidad y plazo se confirman al cotizar"],"whatsapp":"Hola, quiero cotizar chombas corporativas para mi empresa."},
+      {"name":"Camisa Oxford","category":"camisas","image":"https://catalogo-open-indumentaria.lovable.app/__l5e/assets-v1/dd8fb61b-02f7-470e-af96-2d8612895293/camisa-celeste-hombre.png","badge":"Open Indumentaria","description":"Opción prolija para oficinas, reuniones y atención con imagen formal.","bullets":["Pensada para oficinas y encuentros de trabajo","Se puede combinar con pantalón o chomba del catálogo","Colores, talles, composición, disponibilidad y plazo se confirman al cotizar"],"whatsapp":"Hola, quiero cotizar camisas Oxford para mi empresa."},
+      {"name":"Pantalón cargo","category":"pantalones","image":"https://catalogo-open-indumentaria.lovable.app/__l5e/assets-v1/f2929b39-8a78-47b1-a00f-ef39eee2c2ed/pantalon-cargo-hombre.png","badge":"Open Indumentaria","description":"Prenda útil para equipos operativos que necesitan bolsillos visibles y uso diario.","bullets":["Pensado para tareas operativas y traslado de elementos","Combina con remeras o chombas del catálogo","Colores, talles, composición, disponibilidad y plazo se confirman al cotizar"],"whatsapp":"Hola, quiero cotizar pantalones cargo para mi empresa."},
+      {"name":"Chaleco polar","category":"chalecos","image":"https://catalogo-open-indumentaria.lovable.app/__l5e/assets-v1/3c890a73-149d-4530-b43d-c1567ac9da69/chaleco-polar-azul-francia.png","badge":"Open Indumentaria","description":"Capa para combinar sobre remeras o chombas en jornadas de uso diario.","bullets":["Sirve como capa liviana para sumar abrigo","Combina bien sobre camisas, remeras o chombas","Colores, talles, composición, disponibilidad y plazo se confirman al cotizar"],"whatsapp":"Hola, quiero cotizar chalecos polar para mi empresa."},
+      {"name":"Campera polar","category":"camperas","image":"https://catalogo-open-indumentaria.lovable.app/__l5e/assets-v1/a76cfcc2-8401-471e-b2f7-fe91f668ea65/campera-polar-negra.png","badge":"Open Indumentaria","description":"Prenda de abrigo cotidiano para sumar confort en el uso diario del equipo.","bullets":["Pensada para el uso cotidiano y la superposición de prendas","Acompaña bien equipos de trabajo y traslados","Colores, talles, composición, disponibilidad y plazo se confirman al cotizar"],"whatsapp":"Hola, quiero cotizar camperas polar para mi empresa."},
+      {"name":"Chaleco matelassé","category":"chalecos","image":"https://catalogo-open-indumentaria.lovable.app/__l5e/assets-v1/e5cb5351-010b-4582-bf5f-9ffc3569dcaa/chaleco-matelasse-saju.png","badge":"Open Indumentaria","description":"Prenda para combinar sobre camisa o remera y sumar presencia visual.","bullets":["Útil para sumar una capa liviana sobre camisa","Buen complemento para oficina, atención o visitas","Colores, talles, composición, disponibilidad y plazo se confirman al cotizar"],"whatsapp":"Hola, quiero cotizar chalecos matelassé para mi empresa."},
+      {"name":"Rompevientos","category":"camperas","image":"https://catalogo-open-indumentaria.lovable.app/__l5e/assets-v1/86d058b4-ca57-4a46-a66c-e8414209b054/rompevientos-rojo.png","badge":"Open Indumentaria","description":"Una capa exterior para completar el uniforme de tu equipo en sus recorridos y tareas cotidianas.","bullets":["Prenda exterior para combinar con otras capas","Ideal para sumar identidad de marca en exteriores","Colores, talles, composición, disponibilidad y plazo se confirman al cotizar"],"whatsapp":"Hola, quiero cotizar rompevientos para mi empresa."},
+      {"name":"Parka roja","category":"parka","image":"https://catalogo-open-indumentaria.lovable.app/__l5e/assets-v1/8a4131eb-409c-4151-ad5b-abdbfd0b2b61/parka-hombre-roja.png","badge":"Open Indumentaria","description":"Parka roja con cintas reflectivas para tareas al aire libre y uso corporativo.","bullets":["Pensada para tareas al aire libre y visibilidad de equipo","Puede combinarse con pantalón cargo y remera del catálogo","Colores, talles, composición, disponibilidad y plazo se confirman al cotizar; no reemplaza EPP certificado"],"whatsapp":"Hola, quiero cotizar una parka roja con cintas reflectivas para mi empresa."}
+    ];
+
+    const catalogGrid = document.getElementById('catalogGrid');
+    const chips = [...document.querySelectorAll('.chip')];
+    const modalBackdrop = document.getElementById('modalBackdrop');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDesc = document.getElementById('modalDesc');
+    const modalText = document.getElementById('modalText');
+    const modalBullets = document.getElementById('modalBullets');
+    const modalWaLink = document.getElementById('modalWaLink');
+    const modalCopyBtn = document.getElementById('modalCopyBtn');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const menuBtn = document.getElementById('menuBtn');
+    const mobilePanel = document.getElementById('mobilePanel');
+    const quoteForm = document.getElementById('quoteForm');
+    const formStatus = document.getElementById('formStatus');
+
+    let currentProduct = null;
+    let lastFocused = null;
+
+    function whatsappLink(message){
+      return `https://wa.me/5493875916465?text=${encodeURIComponent(message)}`;
+    }
+    function trackCommercialEvent(type, payload = {}){
+      try{
+        const entry = { type, ...payload, ts: Date.now() };
+        const key = 'open_commercial_events';
+        const current = JSON.parse(localStorage.getItem(key) || '[]');
+        current.push(entry);
+        localStorage.setItem(key, JSON.stringify(current.slice(-50)));
+        window.dispatchEvent(new CustomEvent('open_commercial_event', { detail: entry }));
+      }catch(e){}
+      if (window.dataLayer && Array.isArray(window.dataLayer)) {
+        window.dataLayer.push({ event: 'open_commercial_event', ...payload, commercial_type: type });
+      }
+    }
+
+    function renderCatalog(filter = 'todos'){
+      trackCommercialEvent('catalog_filter', { filter, origin: 'catalogo' });
+      const items = filter === 'todos' ? products : products.filter(p => p.category === filter);
+      if (!items.length){
+        catalogGrid.innerHTML = `
+          <div class="about-card" style="grid-column:1/-1" data-aos="fade-up">
+            <h3>No hay resultados para este filtro</h3>
+            <p style="margin-top:8px;">Probá con otra categoría o consultanos por WhatsApp para orientarte con la prenda adecuada.</p>
+          </div>`;
+        return;
+      }
+      catalogGrid.innerHTML = items.map((p) => `
+        <article class="product-card">
+          <div class="product-media"><img src="${p.image}" alt="${p.name}" loading="lazy" style="width:100%;height:100%;object-fit:contain;display:block">
+            <div class="product-badge">${p.badge}</div>
+          </div>
+          <div class="product-body">
+            <h3>${p.name}</h3>
+            <p>${p.description}</p>
+            <div class="meta-row">
+              <span class="meta">Personalizable</span>
+              <span class="meta">Cotización a medida</span>
+            </div>
+            <div class="product-actions">
+              <button class="card-btn" type="button" data-open-product="${products.indexOf(p)}">Ver detalles</button>
+              <a class="card-btn primary" href="${whatsappLink(p.whatsapp)}" target="_blank" rel="noopener noreferrer">${p.category === 'parka' ? 'Cotizar esta parka' : p.category === 'chombas' ? 'Cotizar esta chomba' : p.category === 'camisas' ? 'Cotizar esta camisa' : p.category === 'pantalones' ? 'Cotizar este cargo' : p.category === 'chalecos' ? 'Cotizar este chaleco' : p.category === 'camperas' ? 'Cotizar esta campera' : 'Cotizar esta prenda'}</a>
+            </div>
+          </div>
+        </article>
+      `).join('');
+      bindProductButtons();
+    }
+
+    function bindProductButtons(){
+      document.querySelectorAll('[data-open-product]').forEach(btn => {
+        btn.addEventListener('click', () => openProductModal(Number(btn.dataset.openProduct)));
+      });
+    }
+
+    function openProductModal(index){
+      const p = products[index];
+      if (!p) return;
+      currentProduct = p;
+      trackCommercialEvent('product_view', { product: p.name, origin: 'catalogo' });
+      lastFocused = document.activeElement;
+      modalTitle.textContent = p.name;
+      document.getElementById("modalPhoto").src=p.image;
+      document.getElementById("modalPhoto").alt=p.name;
+      modalDesc.textContent = p.badge;
+      modalText.textContent = p.description;
+      modalBullets.innerHTML = p.bullets.map(b => `<li>${b}</li>`).join('');
+      modalWaLink.href = whatsappLink(`Hola, quiero cotizar: ${p.name}. ${p.whatsapp}`);
+      modalCopyBtn.dataset.message = `Hola, quiero cotizar: ${p.name}. ${p.whatsapp}`;
+      modalBackdrop.classList.add('open');
+      modalBackdrop.setAttribute('aria-hidden', 'false');
+      closeModalBtn.focus();
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeProductModal(){
+      modalBackdrop.classList.remove('open');
+      modalBackdrop.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      if (lastFocused && typeof lastFocused.focus === 'function') lastFocused.focus();
+    }
+
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        chips.forEach(c => c.setAttribute('aria-pressed', 'false'));
+        chip.setAttribute('aria-pressed', 'true');
+        renderCatalog(chip.dataset.filter);
+      });
+    });
+
+    modalBackdrop.addEventListener('click', (e) => {
+      if (e.target === modalBackdrop) closeProductModal();
+    });
+    closeModalBtn.addEventListener('click', closeProductModal);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modalBackdrop.classList.contains('open')) closeProductModal();
+      if (e.key === 'Escape' && mobilePanel.classList.contains('open')) toggleMobileMenu(false);
+    });
+
+    modalCopyBtn.addEventListener('click', async () => {
+      const text = modalCopyBtn.dataset.message || '';
+      try{
+        await navigator.clipboard.writeText(text);
+        modalCopyBtn.textContent = 'Mensaje copiado';
+        setTimeout(() => modalCopyBtn.textContent = 'Copiar mensaje', 1500);
+      }catch{
+        modalCopyBtn.textContent = 'No se pudo copiar';
+        setTimeout(() => modalCopyBtn.textContent = 'Copiar mensaje', 1500);
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      const waLink = e.target.closest('a[href*="wa.me/5493875916465"]');
+      if (waLink) {
+        const label = waLink.textContent.trim() || 'whatsapp';
+        trackCommercialEvent('whatsapp_click', { origin: label, product: currentProduct?.name || '' });
+      }
+    });
+
+    function toggleMobileMenu(force){
+      const open = typeof force === 'boolean' ? force : !mobilePanel.classList.contains('open');
+      mobilePanel.classList.toggle('open', open);
+      mobilePanel.hidden = !open;
+      menuBtn.setAttribute('aria-expanded', String(open));
+      menuBtn.textContent = open ? 'Cerrar' : 'Menú';
+    }
+
+    menuBtn.addEventListener('click', () => toggleMobileMenu());
+    mobilePanel.addEventListener('click', (e) => {
+      if (e.target.matches('a')) toggleMobileMenu(false);
+    });
+
+    quoteForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      formStatus.className = 'form-status';
+      const submitBtn = quoteForm.querySelector('button[type="submit"]');
+      const data = Object.fromEntries(new FormData(quoteForm).entries());
+      const required = ['nombre','prenda'];
+      const missing = required.filter(key => !String(data[key] || '').trim());
+
+      if (missing.length){
+        formStatus.textContent = 'Completá nombre y prenda para continuar en WhatsApp.';
+        formStatus.classList.add('error');
+        const firstMissing = quoteForm.querySelector(`[name="${missing[0]}"]`);
+        if (firstMissing) firstMissing.focus();
+        return;
+      }
+
+      const lines = [
+        'Hola, quiero consultar por uniformes:',
+        `Nombre: ${data.nombre}`,
+        data.empresa ? `Empresa: ${data.empresa}` : null,
+        `Prenda: ${data.prenda}`,
+        data.cantidad ? `Cantidad aproximada: ${data.cantidad}` : null,
+        data.mensaje ? `Detalles: ${data.mensaje}` : null,
+        '',
+        'Quedo a la espera.'
+      ].filter(Boolean);
+
+      const url = whatsappLink(lines.join('\n'));
+      trackCommercialEvent('quote_form_continue', { origin: 'formulario', product: data.prenda });
+
+      formStatus.textContent = 'Abriendo WhatsApp para continuar la consulta...';
+      formStatus.classList.remove('error');
+      if (submitBtn) submitBtn.disabled = true;
+      window.open(url, '_blank', 'noopener,noreferrer');
+      if (submitBtn) submitBtn.disabled = false;
+      formStatus.classList.add('success');
+      formStatus.textContent = 'Listo: revisá WhatsApp para confirmar el mensaje.';
+    });
+
+    renderCatalog();
+
+    // AOS para una presentación premium, sin animar el título principal del hero.
+    if(window.AOS) AOS.init({ once: true, duration: 700, offset: 80 });
+  </script>
+</body>
+</html>
